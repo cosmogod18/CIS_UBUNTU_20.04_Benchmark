@@ -11,21 +11,21 @@ ongoing support for them, especially in light of frequent operating system chang
 
 
 
-## 1.1.1.1 Ensure mounting of cramfs filesystems is disabled 
-### Description:
+### 1.1.1.1 Ensure mounting of cramfs filesystems is disabled 
+#### Description:
 The cramfs filesystem type is a compressed read-only Linux filesystem embedded in small footprint systems. A cramfs image can be used without having to first decompressthe image.
-### Rationale:
+#### Rationale:
 Removing support for unneeded filesystem types reduces the local attack surface of the system. If this filesystem type is not needed, disable it.
 
-## 1.1.1.2 Ensure mounting of freevxfs filesystems is disabled 
-### Description:
+### 1.1.1.2 Ensure mounting of freevxfs filesystems is disabled 
+#### Description:
 The freevxfs filesystem type is a free version of the Veritas type filesystem. This is the primary filesystem type for HP-UX operating systems.
-### Rationale:
+#### Rationale:
 Removing support for unneeded filesystem types reduces the local attack surface of the system. If this filesystem type is not needed, disable it.
 
-## 1.1.1.3 Ensure mounting of jffs2 filesystems is disabled 
-### Description:
+### 1.1.1.3 Ensure mounting of jffs2 filesystems is disabled 
+#### Description:
 The jffs2 (journaling flash filesystem 2) filesystem type is a log-structured filesystem used in flash memory devices.
-### Rationale:
+#### Rationale:
 Removing support for unneeded filesystem types reduces the local attack surface of the system. If this filesystem type is not needed, disable it.
 
