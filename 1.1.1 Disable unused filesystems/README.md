@@ -53,3 +53,9 @@ This is unlike traditional Linux package management approaches, like APT or RPM,
 distribution on an application update and delay therefore application deployment from developers to their software's end-user. 
 Snaps themselves have no dependency on any external store ("App store"), can be obtained from any source and can be therefore used for upstream software deployment.
 
+### 1.1.1.7 Ensure mounting of udf filesystems is disabled
+#### Description:
+The udf filesystem type is the universal disk format used to implement ISO/IEC 13346 and ECMA-167 specifications. This is an open vendor filesystem type for data storage
+on a broad range of media. This filesystem type is necessary to support writing DVDs and newer optical disc formats.
+#### Rationale:
+Removing support for unneeded filesystem types reduces the local attack surface of the system. If this filesystem type is not needed, disable it.
