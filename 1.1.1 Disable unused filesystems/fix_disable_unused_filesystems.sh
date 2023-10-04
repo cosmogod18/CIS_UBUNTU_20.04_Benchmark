@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # List of modules to fix
-modules=("cramfs","freevxfs", "jffs2", "hfs", "hfsplus", "squashfs", "udf")
+modules=("cramfs", "freevxfs", "jffs2", "hfs", "hfsplus", "squashfs", "udf")
 
 l_mtype="fs"
 l_mpath="/lib/modules/**/kernel/$l_mtype"
