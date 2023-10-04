@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # List of modules to check
-modules=("hfs" "cramfs" "hfsplus")
+modules=("cramfs","freevxfs", "jffs2", "hfs", "hfsplus", "squashfs", "udf")
 
 # Initialize variables
 l_output=""
